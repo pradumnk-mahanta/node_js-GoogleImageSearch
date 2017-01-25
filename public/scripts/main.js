@@ -1,16 +1,18 @@
-function remindMe() {
-    var remindData = JSON.stringify({ phoneNumber : $("#phoneNumber").val(),
-                                      onDate : $("#onDate").val(),
-                                      countryCode : $("#countryCode").val(),
-                                      remindText : $("#remindText").val(),
-                                      onTime : $("#onTime").val()});
-    console.log(remindData);
+function searchQuery() {
+    var searchQuery = JSON.stringify({searchQuery : $("#searchtext").val()});
+    console.log(searchQuery);
     $.ajax({
-      url: '/remindme',
+      url: '/searchtext',
       type: 'POST',
       dataType: 'json',
       contentType: 'application/json; charset=UTF-8',
-      data: remindData,
-      success: function(){}
+      data: searchQuery,
+      success: function(returnedData){
+        //console.log(returnedData);
+        window.alert("Data Processed Successfully!");
+      },
+      error: function(){
+        window.alert("Request Processing Failed!")
+      }
     });
 }
