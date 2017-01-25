@@ -1,0 +1,33 @@
+.mainbody {
+  background: #FFFFFF;
+  color: black;}
+  .mainbody .btn-primary {
+    background: #845ac7;
+    border-color: #845ac7;}
+    .mainbody .btn-primary:hover {
+      background: #7646c1;}
+
+.inputbox{
+    margin: 10px;
+    width: 600px;
+    padding-left:10px;
+    border-style: solid;
+    border-color:845ac7;
+    border-radius: 20px;
+    height: 40px
+}
+
+.image-header{
+  height: 200px;
+}
+
+.container{
+  align-items: center;
+}
+#bottom-message{
+  position: fixed;
+  bottom: 0;
+  left: 12.5%;
+  width: 75%;
+  align-items: center;
+}

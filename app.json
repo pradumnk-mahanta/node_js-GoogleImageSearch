@@ -1,0 +1,6 @@
+{
+  "name": "Google Images Search",
+  "description": "Fill your life with photographs",
+  "repository": "https://github.com/pradumnk-mahanta/node_js-GoogleImageSearch",
+  "keywords": ["node", "express", "static"],
+}
